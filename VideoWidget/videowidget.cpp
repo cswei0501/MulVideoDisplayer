@@ -111,6 +111,7 @@ void VideoWidget::initializeGL()
 {
     m_renderM->registerRender(AV_PIX_FMT_NV12);
     m_renderM->registerRender(AV_PIX_FMT_YUV420P);
+    m_renderM->registerRender(AV_PIX_FMT_YUVJ420P);
     render_ = createRender();
     if(render_){
         render_->initsize(QOpenGLContext::currentContext());

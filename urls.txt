@@ -1,6 +1,1 @@
-test.mp4 cuda
-test.mp4 cuda
-test.mp4 cuda
-fassdd.mp4 cuda
-test.mp4 qsv
-test.mp4 qsv
+rtsp://192.168.2.66/testxkd.avi cpu

@@ -4,7 +4,8 @@
 #include "mainwindow.h"
 
 extern "C" {
-    _declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
+//    _declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
+//    __declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 0x00000001
 }
 #pragma execution_character_set("utf-8")
 int main(int argc, char *argv[])
@@ -16,6 +17,7 @@ int main(int argc, char *argv[])
     a.setProperty(FACETORY_KEY, reinterpret_cast<unsigned long long>(facetoryI));
 
     MainWindow w;
+    w.setWindowFlag(Qt::FramelessWindowHint);
     w.showMaximized();
 
     QObject::connect(qApp, &QApplication::aboutToQuit, [&]{

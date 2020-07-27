@@ -12,7 +12,7 @@ RealPlayManager::RealPlayManager(QWidget *parent):
     QWidget(parent)
 {
     m_mainLay = new QGridLayout;
-    m_mainLay->setMargin(0);
+    m_mainLay->setMargin(1);
     laySpacing_ = 1;
     m_mainLay->setSpacing(laySpacing_);
     setLayout(m_mainLay);
