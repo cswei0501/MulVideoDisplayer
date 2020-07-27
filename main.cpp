@@ -1,7 +1,11 @@
 ﻿#include <QApplication>
+#include <Windows.h>
 #include "Service/servicefacetory.h"
 #include "mainwindow.h"
 
+extern "C" {
+    _declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
+}
 #pragma execution_character_set("utf-8")
 int main(int argc, char *argv[])
 {
