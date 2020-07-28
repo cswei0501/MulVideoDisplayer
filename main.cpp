@@ -4,8 +4,10 @@
 #include "mainwindow.h"
 
 extern "C" {
+//确保连接了nvidia的显示器
 //    _declspec(dllexport) DWORD NvOptimusEnablement = 0x00000001;
-//    __declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 0x00000001
+//确保连接了amd的显示器
+//    __declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 0x00000001;
 }
 #pragma execution_character_set("utf-8")
 int main(int argc, char *argv[])
